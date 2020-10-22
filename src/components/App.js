@@ -19,8 +19,6 @@ class App extends Component {
     .then(data => data.json())
     .then(data => {
       this.setState({ movies: [...data.results] });
-      // console.log("this.state.movies");
-      // console.log(this.state.movies);
     });
 
     // get all genres
